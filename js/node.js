@@ -389,8 +389,8 @@ nodeType.lava = {
 	{
 		return [14, 15];
 	},
-	transparent: false,
-	solid: true
+	transparent: true,
+	solid: false
 }
 
 nodeType.darkgray = {
@@ -519,4 +519,145 @@ nodeType.bedrock = {
 	},
 	transparent: false,
 	solid: true
+}
+
+nodeType.tnt = {
+	id: 37,
+	color: '#d02e2e',
+	texture: function(face)
+	{
+		if(face < FACE.TOP)
+		{
+			return [4, 4];
+		}
+		else
+		{
+			return [5, 4];
+		}
+	},
+	transparent: false,
+	solid: true
+}
+
+nodeType.crafting_table = {
+	id: 38,
+	color: '#a05d25',
+	texture: function(face)
+	{
+		if(face < FACE.TOP)
+		{
+			return [2, 3];
+		}
+		else
+		{
+			return [1, 4];
+		}
+	},
+	transparent: false,
+	solid: true
+}
+
+nodeType.furnace = {
+	id: 39,
+	color: '#787878',
+	texture: function(face)
+	{
+		if(face < FACE.TOP)
+		{
+			return [4, 2];
+		}
+		else
+		{
+			return [0, 1];
+		}
+	},
+	transparent: false,
+	solid: true
+}
+
+nodeType.green_courtain = {
+	id: 40,
+	color: '#68D000',
+	texture: function(face)
+	{
+		return [2, 9];
+	},
+	transparent: true,
+	solid: false
+}
+
+nodeType.red_courtain = {
+	id: 41,
+	color: '#BE3600',
+	texture: function(face)
+	{
+		return [1, 8];
+	},
+	transparent: true,
+	solid: false
+}
+
+nodeType.sculk_block = {
+	id: 42,
+	color: '#10181e',
+	texture: function(face)
+	{
+		return [6, 4];
+	},
+	transparent: false,
+	solid: true
+}
+
+nodeType.sculk_shrieker = {
+	id: 43,
+	color: '#10181e',
+	texture: function(face)
+	{
+		if(face < FACE.TOP)
+		{
+			return [5, 3];
+		}
+		else
+		{
+			return [6, 3];
+		}
+	},
+	transparent: true,
+	solid: true
+}
+
+nodeType.ancient_debris = {
+	id: 44,
+	color: '#260F08',
+	texture: function(face)
+	{
+		if(face < FACE.TOP)
+		{
+			return [6, 1];
+		}
+		else
+		{
+			return [7, 1];
+		}
+	},
+	transparent: false,
+	solid: true
+}
+
+nodeType.debug_1 = {
+  id: 45,
+  color: '#260F08',
+  texture: function(face)
+  {
+    if(face < FACE.TOP)
+    {
+      return [0, 15];
+    }
+    else
+    {
+      return [1, 15];
+    }
+  },
+  transparent: true,
+  solid: true
 }
